@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    width: 100%;
+
+}
+body{
+    background-color:  #FFFFFF;
+}
+
+.logo{
+    /* align-items: baseline;
+    justify-content: baseline; */
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 74%;
+  margin-top: 0;
+  padding: 12px 24px;
+  background-color: white;
+}
+.top-bannar{
+    background-color:  #138A83;
+    width: 100%;
+    height: 5vh;
+}
+.nav-search {
+  width: 100%;
+  max-width: 520px; /* increase this number for a wider box */
+}
+
+#medicine-search {
+  width: 100%;
+}

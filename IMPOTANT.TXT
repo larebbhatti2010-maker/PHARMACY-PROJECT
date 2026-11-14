@@ -1,0 +1,66 @@
+I MAKE A WEBSITE NAME ==
+AND I USE ALL THE SKILS I LERAN I PASS 9 MONTHS 
+AND I ADD AILEAST ONE FEACTURE IN THIS SO I START BUILDING THIS FROM SCRATCH 
+AND I MAKE IT PROFESSIONAL LEVEL AND I START FROM SKRACH 
+
+
+
+1 = MAKE A SEPRATE FOLDER FOR IMGS AND BANNAR DON'T MAKE A MAESS IN THIS PROJECT
+2 = MAKE WITH GIT AND GITHUB
+3 = ADD PHP OR NEXT.JS 
+AND YOU MAKE LANDING PAGE WITH THE HELP OF REACT 
+AND FONTS , COLORU YOU SHOULD PREPARE FIRST 
+
+FONTS NAME AND THE THEME OF YOUR WEBSITE AND MORE OTHER THINGS 
+
+FIRST OF ALL WHAT KIND OF WEBSITE I AM MAKING SO = IF I START MAKING A PHARMACY WEBSITE SO 
+WHICH THINGS I NEED  AND WHERE I GET DATA AND MAKING IT PROFESSIONAL 
+
+
+
+AND MOST IMPORTANT THING ADD A FEACTURE OF ADD TO CARD
+
+ 
+
+
+ Add these sections to your home page, from top to bottom:
+
+Top information bar
+Phone number, opening hours, and delivery area.
+Example: “Delivering in Karachi” — only if the pharmacy confirms this.
+Header menu
+Pharmacy logo and name, plus links to Home, Medicines, Services, About, Contact, and the Cart.
+Welcome section
+A clear heading, short message, and buttons.
+Example:
+Medicines and healthcare products in Karachi
+Browse available products and place an order online.
+Buttons: Shop Medicines · Contact Us
+Medicine search box
+Example: “Search for a medicine or health product”
+Product categories
+Add categories the pharmacy actually sells, such as Vitamins, Personal Care, or First Aid.
+Featured products
+Show a few available products with a photo, name, price, stock status, and Add to Cart button. Use information the pharmacy provides and approves.
+How ordering works
+Choose products → Provide a prescription if required → Pharmacy reviews the order → Choose payment → Delivery or pickup
+Delivery and payment information
+Explain Karachi delivery areas, delivery fees, estimated times, and accepted online or offline payment methods—once confirmed.
+Services and professional help
+List the pharmacy’s real services. Add a doctor or consultation section only if the client confirms that service and provides the details.
+Contact and footer
+Show the address, phone, opening hours, map, and links to delivery, privacy, and website terms.
+
+
+
+==================home page theme========================================================
+
+Main teal: #138A83 — buttons, links, and highlights
+Dark teal: #0B6D68 — footer and darker button states
+Soft mint: #EAF7F5 — hero area and soft backgrounds
+Page background: #F7FAF9
+White: #FFFFFF — cards and main sections
+Heading text: #203238
+Secondary text: #6B7C80
+Borders: #E7EEEE
+Small accent: #F5BD54 — use sparingly
