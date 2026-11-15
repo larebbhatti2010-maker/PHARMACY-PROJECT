@@ -1,46 +1,144 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html,
-body{
-    height: 100%;
-    width: 100%;
-
-}
-body{
-    background-color:  #FFFFFF;
-}
-
-.logo{
-    /* align-items: baseline;
-    justify-content: baseline; */
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 74%;
-  margin-top: 0;
-  padding: 12px 24px;
-  background-color: white;
+:root {
+  --pharmacy-green: #16784b;
+  --pharmacy-dark: #145c3d;
+  --pharmacy-light: #f2f8f4;
+  --pharmacy-border: #dce8df;
 }
 .top-bannar{
-    background-color:  #138A83;
     width: 100%;
     height: 5vh;
+    background-color:  #138A83;
+    color: white;
 }
-.nav-search {
+#container {
   width: 100%;
-  max-width: 520px; /* increase this number for a wider box */
 }
 
-#medicine-search {
-  width: 100%;
+#main {
+  background-color: #fff;
+  /* border-bottom: 1px solid var(--pharmacy-border); */
+  box-shadow: 0 2px 10px rgb(0 0 0 / 5%);
+}
+
+/* Logo and brand name */
+#main .navbar-brand {
+  margin-right: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.logo img {
+  display: block;
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+.logo p {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.brand-name {
+  display: block;
+  color: #138A83;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.brand-subtitle {
+  color: #64756a;
+  font-size: 0.85rem;
+}
+
+/* Search field */
+.nav-search {
+  width: min(100%, 300px);
+}
+
+.nav-search .form-control {
+  min-height: 44px;
+  border-color: var(--pharmacy-border);
+  border-radius: 24px;
+}
+
+.nav-search .form-control:focus {
+  border-color: var(--pharmacy-green);
+  box-shadow: 0 0 0 0.2rem rgb(22 120 75 / 15%);
+}
+
+.search-icon {
+  color: #748279;
+  pointer-events: none;
+}
+
+/* Navigation links */
+#main .nav-link {
+  color: #35483c;
+  font-weight: 500;
+}
+
+#main .nav-link:hover,
+#main .nav-link.active {
+  color:#138A83;
+}
+
+/* Medicines dropdown */
+#main .dropdown-menu {
+  border: 1px solid var(--pharmacy-border);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 8%);
+}
+
+#main .dropdown-item:hover {
+  color: var(--pharmacy-dark);
+  background-color: var(--pharmacy-light);
+}
+
+/* Cart button */
+.nav-cart {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  background-color: var(--pharmacy-green);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.nav-cart:hover {
+  color: #fff;
+  background-color: var(--pharmacy-dark);
+}
+
+/* Mobile menu */
+.navbar-toggler {
+  border-color: var(--pharmacy-border);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgb(22 120 75 / 15%);
+}
+
+@media (max-width: 991.98px) {
+  #main .navbar-collapse {
+    padding: 1rem 0;
+  }
+
+  .nav-search {
+    width: 100%;
+  }
+
+  #main .navbar-nav {
+    padding-top: 0.5rem;
+  }
+
+  .nav-cart {
+    margin-top: 0.75rem;
+  }
 }

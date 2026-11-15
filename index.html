@@ -16,18 +16,23 @@
 
     <!-- Your HTML code here -->
 <div class="top-bannar">
+<p>hr</p>
   
 </div>
 
+  <div id="container">
 
 <nav id="main" class="navbar navbar-expand-lg  ">
+
+
+
   <div class="container px-4">
 
     <a class="navbar-brand" href="index.html">
 <div class="logo">
   <img src="PICTURES/logo.png" alt="" width="80px">
         <p>
-                  <span class="brand-name">Al Shifa Pharmacy</span><br>
+                  <span class="brand-name">Al Shifa Pharmacy</span>
       <small class="brand-subtitle">&amp; Child Care Clinic</small>
         </p>
 
@@ -78,13 +83,39 @@
         >
       </form>
 
-      <ul class="navbar-nav ms-lg-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="medicines.html">Medicines</a></li>
-        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
+   <ul class="navbar-nav ms-lg-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="index.html">Home</a>
+  </li>
 
+  <li class="nav-item dropdown">
+    <a
+      class="nav-link dropdown-toggle"
+      href="#"
+      role="button"
+      data-bs-toggle="dropdown"
+      aria-expanded="false"
+    >
+      Medicines
+    </a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="pain-relief.html">Pain Relief</a></li>
+      <li><a class="dropdown-item" href="allergy.html">Allergy</a></li>
+      <li><a class="dropdown-item" href="vitamins.html">Vitamins</a></li>
+    </ul>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" href="services.html">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+  </li>
+
+    <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+  </li>
+</ul>
       <a class="btn nav-cart ms-lg-3" href="cart.html">
         <img src="ICONS/add-to-cart.png" alt="" width="22" height="22">
         Cart
@@ -93,7 +124,7 @@
   </div>
 </nav>
 
-
+  </div>
     <!-- Bootstrap JS -->
     <script src="home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
