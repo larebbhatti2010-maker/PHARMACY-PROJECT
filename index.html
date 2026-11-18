@@ -1,233 +1,482 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Document</title>
 
-
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home.css" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body>
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Your HTML code here -->
-<div class="top-banner">
-  <p class="">
-   &nbsp;•&nbsp; Delivery across Karachi </p>
-    <p>   &nbsp;•&nbsp; Online and offline payment</p>
- <p>
-    &nbsp;•&nbsp; Prescription orders accepted
-  </p>
-</div>
+    <div class="top-banner">
+      <p class="">&nbsp;•&nbsp; Delivery across Karachi</p>
+      <p>&nbsp;•&nbsp; Online and offline payment</p>
+      <p>&nbsp;•&nbsp; Prescription orders accepted</p>
+    </div>
 
-  <div id="container">
+    <div id="container">
+      <nav id="main" class="navbar navbar-expand-lg">
+        <div class="container px-4">
+          <a class="navbar-brand" href="index.html">
+            <div class="logo">
+              <img src="PICTURES/logo.png" alt="" width="80px" />
+              <p>
+                <span class="brand-name">Al Shifa Pharmacy</span>
+                <small class="brand-subtitle">&amp; Child Care Clinic</small>
+              </p>
+            </div>
+          </a>
 
-<nav id="main" class="navbar navbar-expand-lg  ">
+          <!-- Mobile menu toggle -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar"
+            aria-expanded="false"
+            aria-label="Open menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <!-- Search field with icon only -->
+            <form
+              class="nav-search position-relative mx-lg-auto my-3 my-lg-0"
+              role="search"
+            >
+              <svg
+                class="search-icon position-absolute top-50 start-0 translate-middle-y ms-3"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="10.5" cy="10.5" r="6.5"></circle>
+                <path d="m15.5 15.5 5 5"></path>
+              </svg>
 
+              <input
+                id="medicine-search"
+                name="q"
+                class="form-control ps-5"
+                type="search"
+                placeholder="Search medicines"
+                aria-label="Search medicines"
+              />
+            </form>
 
-  <div class="container px-4">
+            <ul class="navbar-nav ms-lg-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html">Home</a>
+              </li>
 
-    <a class="navbar-brand" href="index.html">
-<div class="logo">
-  <img src="PICTURES/logo.png" alt="" width="80px">
-        <p>
-                  <span class="brand-name">Al Shifa Pharmacy</span>
-      <small class="brand-subtitle">&amp; Child Care Clinic</small>
-        </p>
+              <li class="nav-item dropdown">
+  <a
+    class="nav-link dropdown-toggle"
+    href="#"
+    role="button"
+    data-bs-toggle="dropdown"
+    aria-expanded="false"
+  >
+    Medicines
+  </a>
 
-</div>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="pain-relief.html">Pain relief</a></li>
+    <li><a class="dropdown-item" href="cold-cough-flu.html">Cold, cough &amp; flu</a></li>
+    <li><a class="dropdown-item" href="allergy.html">Allergy &amp; sinus</a></li>
+    <li><a class="dropdown-item" href="digestive-health.html">Digestive health</a></li>
+    <li><a class="dropdown-item" href="vitamins.html">Vitamins &amp; supplements</a></li>
+    <li><a class="dropdown-item" href="first-aid.html">First aid</a></li>
+    <li><a class="dropdown-item" href="skin-care.html">Skin care</a></li>
+    <li><a class="dropdown-item" href="eye-ear-care.html">Eye &amp; ear care</a></li>
+    <li><a class="dropdown-item" href="oral-care.html">Oral care</a></li>
+    <li><a class="dropdown-item" href="womens-health.html">Women’s health</a></li>
+    <li><a class="dropdown-item" href="baby-child-health.html">Baby &amp; child health</a></li>
+    <li><a class="dropdown-item" href="diabetes-care.html">Diabetes care</a></li>
+    <li><a class="dropdown-item" href="medical-devices.html">Medical devices</a></li>
+    <li><a class="dropdown-item" href="prescription-medicines.html">Prescription medicines</a></li>
+  </ul>
+</li>
 
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
 
-      
-    </a>
-
-    <!-- Mobile menu toggle -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#mainNavbar"
-      aria-controls="mainNavbar"
-      aria-expanded="false"
-      aria-label="Open menu"
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <a class="btn nav-cart ms-lg-3" href="cart.html">
+              <img src="ICONS/add-to-cart.png" alt="" width="22" height="22" />
+              Cart
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div
+      id="carouselExample"
+      class="carousel carousel-overlay slide"
+      aria-label="Homepage banners"
     >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <div class="carousel-inner rounded-5">
+        <!-- Banner 1 -->
+        <div class="carousel-item active">
+          <img
+            src="PICTURES/HOME-banner.png"
+            class="d-block w-100"
+            alt="Pharmacy delivery in Karachi"
+          />
 
-    <div class="collapse navbar-collapse" id="mainNavbar">
+          <div class="text">
+            <p class="banner-label">DELIVERY ACROSS KARACHI</p>
+            <h2>Medicines at your convenience</h2>
+            <p>
+              Browse available medicines and health products. Delivery area and
+              timing are confirmed at checkout.
+            </p>
+            <a href="medicines.html" class="btn banner-button"
+              >Shop medicines</a
+            >
+          </div>
+        </div>
 
-      <!-- Search field with icon only -->
-      <form class="nav-search position-relative mx-lg-auto my-3 my-lg-0" role="search">
-        <svg
-          class="search-icon position-absolute top-50 start-0 translate-middle-y ms-3"
-          width="18"
-          height="18"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          aria-hidden="true"
-        >
-          <circle cx="10.5" cy="10.5" r="6.5"></circle>
-          <path d="m15.5 15.5 5 5"></path>
-        </svg>
+        <!-- Banner 2 -->
+        <div class="carousel-item">
+          <img
+            src="PICTURES/Modern%20Green%20Pharmacy%20Healthcare%20Banner.png"
+            class="d-block w-100"
+            alt="Prescription order information"
+          />
 
-        <input
-          id="medicine-search"
-          name="q"
-          class="form-control ps-5"
-          type="search"
-          placeholder="Search medicines"
-          aria-label="Search medicines"
-        >
-      </form>
+          <div class="text">
+            <p class="banner-label">PRESCRIPTION ORDERS</p>
+            <h2>Ordering with a prescription?</h2>
+            <p>
+              Contact the pharmacy for information about prescription orders.
+            </p>
+            <a href="contact.html" class="btn banner-button"
+              >Contact the pharmacy</a
+            >
+          </div>
+        </div>
 
-   <ul class="navbar-nav ms-lg-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="index.html">Home</a>
-  </li>
+        <!-- Banner 3 -->
+        <div class="carousel-item">
+          <img
+            src="PICTURES/magnific_stunning_w4hE3XY7EI.png"
+            class="d-block w-100"
+            alt="Al Shifa Pharmacy and Child Care Clinic"
+          />
 
-  <li class="nav-item dropdown">
-    <a
-      class="nav-link dropdown-toggle"
-      href="#"
-      role="button"
-      data-bs-toggle="dropdown"
-      aria-expanded="false"
-    >
-      Medicines
-    </a>
-    <ul class="dropdown-menu">
-      <li><a class="dropdown-item" href="pain-relief.html">Pain Relief</a></li>
-      <li><a class="dropdown-item" href="allergy.html">Allergy</a></li>
-      <li><a class="dropdown-item" href="vitamins.html">Vitamins</a></li>
-    </ul>
-  </li>
-
-  <li class="nav-item">
-    <a class="nav-link" href="services.html">Services</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="contact.html">Contact</a>
-  </li>
-
-    <li class="nav-item">
-    <a class="nav-link" href="contact.html">Contact</a>
-  </li>
-</ul>
-      <a class="btn nav-cart ms-lg-3" href="cart.html">
-        <img src="ICONS/add-to-cart.png" alt="" width="22" height="22">
-        Cart
-      </a>
-    </div>
-  </div>
-</nav>
-
-  </div>
-<div id="carouselExample" class="carousel carousel-overlay slide" aria-label="Homepage banners">
-
-  <div class="carousel-inner rounded-5">
-
-    <!-- Banner 1 -->
-    <div class="carousel-item active">
-      <img
-        src="PICTURES/HOME-banner.png"
-        class="d-block w-100"
-        alt="Pharmacy delivery in Karachi"
-      >
-
-      <div class="text">
-        <p class="banner-label">DELIVERY ACROSS KARACHI</p>
-        <h2>Medicines at your convenience</h2>
-        <p>Browse available medicines and health products. Delivery area and timing are confirmed at checkout.</p>
-        <a href="medicines.html" class="btn banner-button">Shop medicines</a>
+          <div class="text">
+            <p class="banner-label">
+              AL SHIFA PHARMACY &amp; CHILD CARE CLINIC
+            </p>
+            <h2>Find our pharmacy and clinic information</h2>
+            <p>
+              See our services, location, opening hours, and contact details.
+            </p>
+            <a href="services.html" class="btn banner-button">View services</a>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <!-- Banner 2 -->
-    <div class="carousel-item">
-      <img
-        src="PICTURES/Modern%20Green%20Pharmacy%20Healthcare%20Banner.png"
-        class="d-block w-100"
-        alt="Prescription order information"
-      >
-
-      <div class="text">
-        <p class="banner-label">PRESCRIPTION ORDERS</p>
-        <h2>Ordering with a prescription?</h2>
-        <p>Contact the pharmacy for information about prescription orders.</p>
-        <a href="contact.html" class="btn banner-button">Contact the pharmacy</a>
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Banner 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide-to="1"
+          aria-label="Banner 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide-to="2"
+          aria-label="Banner 3"
+        ></button>
       </div>
-    </div>
 
-    <!-- Banner 3 -->
-    <div class="carousel-item">
-      <img
-        src="PICTURES/magnific_stunning_w4hE3XY7EI.png"
-        class="d-block w-100"
-        alt="Al Shifa Pharmacy and Child Care Clinic"
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="prev"
+        aria-label="Previous banner"
       >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
 
-      <div class="text">
-        <p class="banner-label">AL SHIFA PHARMACY &amp; CHILD CARE CLINIC</p>
-        <h2>Find our pharmacy and clinic information</h2>
-        <p>See our services, location, opening hours, and contact details.</p>
-        <a href="services.html" class="btn banner-button">View services</a>
-      </div>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExample"
+        data-bs-slide="next"
+        aria-label="Next banner"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
     </div>
 
-  </div>
-
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
-      class="active" aria-current="true" aria-label="Banner 1"></button>
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
-      aria-label="Banner 2"></button>
-    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
-      aria-label="Banner 3"></button>
-  </div>
-
-  <button class="carousel-control-prev" type="button"
-    data-bs-target="#carouselExample" data-bs-slide="prev" aria-label="Previous banner">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-  </button>
-
-  <button class="carousel-control-next" type="button"
-    data-bs-target="#carouselExample" data-bs-slide="next" aria-label="Next banner">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-  </button>
-
-</div>
-
-
-
-<div class="search-med">
-  <h5>popular </h5>
-  <button><a href="">Vitamin</a></button>
-    <button><a href="">First aid</a></button>
+    <div class="search-med">
+      <h5>popular</h5>
+      <button><a href="">Vitamin</a></button>
+      <button><a href="">First aid</a></button>
       <button><a href="">Personal Care</a></button>
-    <button id="pre"><a href="">prescription orders</a></button>
+      <button id="pre"><a href="">prescription orders</a></button>
+    </div>
+
+    <div class="cat">
+      <div class="txt">
+        <h1>Shop by Category</h1>
+        <p>Find the Products you need</p>
+      </div>
+      <div class="view-cate">
+        <a href="">View all Category</a>
+        <a href=""> <img src="ICONS/right-arrow.png" width="30px" /></a>
+      </div>
+    </div>
+
+
+
+
+    <div class="c">
+
+<div class="c">
+  <a class="c1" href="medicines.html">
+    <div class="img">
+      <img src="ICONS/cross.png" alt="" />
+    </div>
+    <div class="t">
+      <h1>Medicines</h1>
+      <p>Browse available items</p>
+    </div>
+  </a>
+
+  <a class="c1" href="vitamins.html">
+    <div class="img">
+      <img src="ICONS/treatment.png" alt="" />
+    </div>
+    <div class="t">
+      <h1>Vitamins</h1>
+      <p>Health and wellness</p>
+    </div>
+  </a>
+
+  <a class="c1" href="first-aid.html">
+    <div class="img">
+      <img src="ICONS/patient-care.png" alt="" />
+    </div>
+    <div class="t">
+      <h1>First aid</h1>
+      <p>Everyday essentials</p>
+    </div>
+  </a>
+
+  <a class="c1" href="personal-care.html">
+    <div class="img">
+      <img src="ICONS/patient.png" alt="" />
+    </div>
+    <div class="t">
+      <h1>Personal care</h1>
+      <p>Care products</p>
+    </div>
+  </a>
 </div>
 
-<div class="cat">
+<!-- popular categores -->
+</div>
 
-  <div class="txt">
-  <h1>Shop by Category</h1>
-  <p>Find the Products you need</p>
+<div class="CADS-HEADINGS">
+  <H1>Popular Products </H1>
+
+<a href="">
+
+  
+  <p>View all Categorie</p>
+  <img src="ICONS/right-arrow.png" width="30px">
+</a>
+</div>
+
+<div class="container">
+
+
+<div class="products-grid">
+  <!-- Panadol -->
+  <section class="product-card">
+    <div class="product-image">
+      <p class="product-badge">Pain relief</p>
+      <img src="MEDICIONS/Panadol.jpg" alt="Panadol pack" />
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Panadol</h2>
+      <p class="product-variant">500 mg · 20 tablets</p>
+      <p class="card-text">For pain and fever relief.</p>
+      <div class="product-footer">
+        <p class="product-price">Rs. 80</p>
+        <div class="product-actions">
+          <button type="button" class="add-to-cart">Add to cart</button>
+          <a href="panadol-details.html" class="view-details">View details</a>
+        </div>
+      </div>
+      <p class="product-note">Use as directed on the pack.</p>
+    </div>
+  </section>
+
+  <!-- Cetirizine -->
+  <section class="product-card">
+    <div class="product-image">
+      <p class="product-badge">Allergy</p>
+      <img src="MEDICIONS/Cetirizine.jpg" alt="Cetirizine pack" />
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Cetirizine</h2>
+      <p class="product-variant">10 mg · 10 tablets</p>
+      <p class="card-text">Allergy medicine.</p>
+      <div class="product-footer">
+        <p class="product-price">Rs. ___</p>
+        <div class="product-actions">
+          <button type="button" class="add-to-cart">Add to cart</button>
+          <a href="cetirizine-details.html" class="view-details">View details</a>
+        </div>
+      </div>
+      <p class="product-note">Check the product label.</p>
+    </div>
+  </section>
+
+  <!-- Vitamin C -->
+  <section class="product-card">
+    <div class="product-image">
+      <p class="product-badge">Supplement</p>
+      <img src="MEDICIONS/Vitamin-C.jpg" alt="Vitamin C supplement pack" />
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">Vitamin C</h2>
+      <p class="product-variant">500 mg · 30 tablets</p>
+      <p class="card-text">Vitamin C supplement.</p>
+      <div class="product-footer">
+        <p class="product-price">Rs. ___</p>
+        <div class="product-actions">
+          <button type="button" class="add-to-cart">Add to cart</button>
+          <a href="vitamin-c-details.html" class="view-details">View details</a>
+        </div>
+      </div>
+      <p class="product-note">Check the product label.</p>
+    </div>
+  </section>
+
+  <!-- Oral rehydration salts -->
+  <section class="product-card">
+    <div class="product-image">
+      <p class="product-badge">Hydration</p>
+      <img src="MEDICIONS/ORS.jpg" alt="Oral rehydration salts sachet" />
+    </div>
+    <div class="card-body">
+      <h2 class="card-title">ORS Sachet</h2>
+      <p class="product-variant">Single sachet</p>
+      <p class="card-text">Oral rehydration salts.</p>
+      <div class="product-footer">
+        <p class="product-price">Rs. ___</p>
+        <div class="product-actions">
+          <button type="button" class="add-to-cart">Add to cart</button>
+          <a href="ors-details.html" class="view-details">View details</a>
+        </div>
+      </div>
+      <p class="product-note">Prepare as directed on the pack.</p>
+    </div>
+  </section>
+
+
+  <!-- Ibuprofen -->
+<section class="product-card">
+  <div class="product-image">
+    <p class="product-badge">Pain relief</p>
+    <img src="MEDICIONS/Ibuprofen.jpg" alt="Ibuprofen pack" />
   </div>
-<div class="view-cate">
-  <a href="">View all Category</a>
-  <a href="">  <img src="ICONS/right-arrow.png" width="30px"></a>
+  <div class="card-body">
+    <h2 class="card-title">Ibuprofen</h2>
+    <p class="product-variant">200 mg · 10 tablets</p>
+    <p class="card-text">Pain relief medicine.</p>
+    <div class="product-footer">
+      <p class="product-price">Rs. ___</p>
+      <div class="product-actions">
+        <button type="button" class="add-to-cart">Add to cart</button>
+        <a href="ibuprofen-details.html" class="view-details">View details</a>
+      </div>
+    </div>
+    <p class="product-note">Check the product label.</p>
+  </div>
+</section>
 
+<!-- Antacid tablets -->
+<section class="product-card">
+  <div class="product-image">
+    <p class="product-badge">Digestive health</p>
+    <img src="MEDICIONS/Antacid.jpg" alt="Antacid tablets pack" />
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">Antacid Tablets</h2>
+    <p class="product-variant">Pack size: ___</p>
+    <p class="card-text">Antacid product.</p>
+    <div class="product-footer">
+      <p class="product-price">Rs. ___</p>
+      <div class="product-actions">
+        <button type="button" class="add-to-cart">Add to cart</button>
+        <a href="antacid-details.html" class="view-details">View details</a>
+      </div>
+    </div>
+    <p class="product-note">Check the product label.</p>
+  </div>
+</section>
+
+<!-- Calamine lotion -->
+<section class="product-card">
+  <div class="product-image">
+    <p class="product-badge">Skin care</p>
+    <img src="MEDICIONS/Calamine.jpg" alt="Calamine lotion bottle" />
+  </div>
+  <div class="card-body">
+    <h2 class="card-title">Calamine Lotion</h2>
+    <p class="product-variant">Bottle size: ___</p>
+    <p class="card-text">Skin-care product.</p>
+    <div class="product-footer">
+      <p class="product-price">Rs. ___</p>
+      <div class="product-actions">
+        <button type="button" class="add-to-cart">Add to cart</button>
+        <a href="calamine-details.html" class="view-details">View details</a>
+      </div>
+    </div>
+    <p class="product-note">Use as directed on the pack.</p>
+  </div>
+</section>
 </div>
 </div>
     <!-- Bootstrap JS -->
     <script src="home.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
