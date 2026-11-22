@@ -1,0 +1,654 @@
+
+:root {
+    --pharmacy-green: #16784b;
+    --pharmacy-dark: #145c3d;
+    --pharmacy-light: #f2f8f4;
+    --pharmacy-border: #dce8df;
+    --pharmacy-teal: #138a83;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+#container {
+    width: 100%;
+}
+
+/* ================= TOP BANNER ================= */
+
+.top-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    min-height: 36px;
+    padding: 6px 16px;
+    background-color: var(--pharmacy-teal);
+    color: #fff;
+}
+
+.top-banner p {
+    margin: 0;
+}
+
+/* ================= MAIN NAVIGATION ================= */
+
+#main {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 5%);
+}
+
+#main .navbar-brand {
+    margin-right: 1.5rem;
+}
+
+/* Logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+.logo img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.logo p {
+    margin: 0;
+    line-height: 1.2;
+}
+
+.brand-name {
+    display: block;
+    color: var(--pharmacy-teal);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.brand-subtitle {
+    color: #64756a;
+    font-size: 0.85rem;
+}
+
+/* Search */
+
+.nav-search {
+    width: min(100%, 300px);
+}
+
+.nav-search .form-control {
+    min-height: 44px;
+    border-color: var(--pharmacy-border);
+    border-radius: 24px;
+}
+
+.nav-search .form-control:focus {
+    border-color: var(--pharmacy-green);
+    box-shadow: 0 0 0 0.2rem rgb(22 120 75 / 15%);
+}
+
+.search-icon {
+    color: #748279;
+    pointer-events: none;
+}
+
+/* Navigation Links */
+
+#main .nav-link {
+    color: #35483c;
+    font-weight: 500;
+}
+
+#main .nav-link:hover,
+#main .nav-link.active {
+    color: var(--pharmacy-teal);
+}
+
+/* Dropdown */
+
+#main .dropdown-menu {
+    border: 1px solid var(--pharmacy-border);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgb(0 0 0 / 8%);
+}
+
+#main .dropdown-item:hover {
+    color: var(--pharmacy-dark);
+    background-color: var(--pharmacy-light);
+}
+
+/* Cart */
+
+.nav-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.6rem 1rem;
+    color: #fff;
+    background-color: var(--pharmacy-green);
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.nav-cart:hover {
+    color: #fff;
+    background-color: var(--pharmacy-dark);
+}
+
+/* Mobile Menu Button */
+
+.navbar-toggler {
+    border-color: var(--pharmacy-border);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem rgb(22 120 75 / 15%);
+}
+
+
+/* ================= CONTACT BANNER ================= */
+
+.TITLE {
+    width: 100%;
+    min-height: 220px;
+    padding: 40px 7%;
+    margin: 40px auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    background: linear-gradient(120deg, #eaf6ef, #f4faf6);
+    border: 1px solid var(--pharmacy-border);
+    border-radius: 15px;
+}
+
+/* Text Section */
+
+.TITLE .txt {
+    max-width: 650px;
+    margin: 0;
+}
+
+.TITLE #h1 {
+    font-size: 35px;
+    font-weight: 700;
+    color: var(--pharmacy-dark);
+    margin: 0 0 15px;
+}
+
+.TITLE #p {
+    font-size: 17px;
+    color: #53665a;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Button */
+
+.contact-action {
+    flex-shrink: 0;
+}
+
+.TITLE #bttn {
+    background-color: var(--pharmacy-teal);
+    color: white;
+    border: none;
+    padding: 15px 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.TITLE #bttn:hover {
+    background-color: var(--pharmacy-dark);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgb(22 120 75 / 20%);
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    width: 100%;
+    background-color: var(--pharmacy-teal);
+    color: #fff;
+    padding: 45px 5% 15px;
+}
+
+/* Footer Main Content */
+
+.under-div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1.3fr 1.3fr;
+    gap: 35px;
+    padding: 20px 0 35px;
+}
+
+/* Brand Section */
+
+.titless h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0 0 5px;
+    color: #fff;
+}
+
+.titless h1 {
+    color: #fff;
+}
+
+.titless h3 {
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 0 18px;
+    color: #fff;
+}
+
+.titless p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #fff;
+    max-width: 260px;
+    margin: 0;
+}
+
+/* Explore & Customer Help */
+
+.Explore h3,
+.Customers-help h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.Explore ul,
+.Customers-help ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Explore li,
+.Customers-help li {
+    margin-bottom: 13px;
+}
+
+.Explore a,
+.Customers-help a {
+    text-decoration: none;
+    color: #e1eee6;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.Explore a:hover,
+.Customers-help a:hover {
+    color: #a8e6bd;
+    padding-left: 5px;
+}
+
+/* Address Section */
+
+.address > h5 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 20px;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.ADDRESS,
+.phone {
+    margin-bottom: 18px;
+}
+
+.ADDRESS p,
+.phone label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #bde5ce;
+    margin: 0 0 7px;
+}
+
+.ADDRESS h4,
+.phone h5 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #e1eee6;
+    margin: 0;
+}
+
+/* Footer Divider */
+
+footer hr {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgb(255 255 255 / 25%);
+    margin: 15px 0 20px;
+}
+
+/* Copyright */
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 5px 0;
+}
+
+.footer-bottom p {
+    font-size: 13px;
+    color: #d5e8dc;
+    margin: 0;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.footer-bottom-links a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #d5e8dc;
+    transition: 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+    color: #a8e6bd;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE
+========================================= */
+
+@media (max-width: 991px) {
+
+    /* Navbar */
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .brand-name {
+        font-size: 1.1rem;
+    }
+
+    .brand-subtitle {
+        font-size: 0.8rem;
+    }
+
+    #main .navbar-collapse {
+        padding: 15px 0;
+    }
+
+    #main .navbar-nav {
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    #main .nav-link {
+        padding: 10px 0;
+    }
+
+    .nav-search {
+        width: 100%;
+        max-width: 100%;
+        margin: 12px 0;
+    }
+
+    .nav-cart {
+        margin-top: 10px;
+    }
+
+    /* Contact Banner */
+
+    .TITLE {
+        padding: 35px 5%;
+        min-height: 190px;
+        gap: 20px;
+    }
+
+    .TITLE #h1 {
+        font-size: 29px;
+    }
+
+    .TITLE #p {
+        font-size: 15px;
+    }
+
+    .TITLE #bttn {
+        padding: 13px 20px;
+        font-size: 14px;
+    }
+
+    /* Footer */
+
+    .under-div {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+    .titless p {
+        max-width: 320px;
+    }
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 576px) {
+
+    /* Top Banner */
+
+    .top-banner {
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 8px 10px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Navbar Logo */
+
+    .logo {
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .brand-name {
+        font-size: 0.95rem;
+    }
+
+    .brand-subtitle {
+        font-size: 0.7rem;
+    }
+
+    #main .navbar-brand {
+        margin-right: 0;
+    }
+
+    #main .navbar-collapse {
+        padding: 12px 5px;
+    }
+
+    #main .nav-link {
+        font-size: 14px;
+    }
+
+    /* Search */
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .nav-search .form-control {
+        min-height: 40px;
+        font-size: 14px;
+    }
+
+    /* Cart */
+
+    .nav-cart {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+    }
+
+    /* Dropdown */
+
+    #main .dropdown-menu {
+        width: 100%;
+    }
+
+    /* Contact Banner */
+
+    .TITLE {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px 22px;
+        min-height: auto;
+        gap: 22px;
+        margin: 25px auto;
+    }
+
+    .TITLE .txt {
+        width: 100%;
+    }
+
+    .TITLE #h1 {
+        font-size: 25px;
+        line-height: 1.3;
+    }
+
+    .TITLE #p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .contact-action {
+        width: 100%;
+    }
+
+    .TITLE #bttn {
+        width: 100%;
+        padding: 14px;
+        font-size: 15px;
+    }
+
+    /* Footer */
+
+    footer {
+        padding: 35px 6% 15px;
+    }
+
+    .under-div {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-bottom: 20px;
+    }
+
+    .titless h2 {
+        font-size: 23px;
+    }
+
+    .Explore h3,
+    .Customers-help h3,
+    .address > h5 {
+        margin-bottom: 14px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .footer-bottom-links {
+        gap: 15px;
+    }
+
+    .footer-bottom p,
+    .footer-bottom-links a {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================
+   EXTRA SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    /* Logo */
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .brand-name {
+        font-size: 0.85rem;
+    }
+
+    .brand-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .navbar-toggler {
+        padding: 5px 8px;
+    }
+
+    .top-banner {
+        font-size: 11px;
+    }
+
+    /* Contact Banner */
+
+    .TITLE {
+        padding: 25px 17px;
+    }
+
+    .TITLE #h1 {
+        font-size: 22px;
+    }
+
+    .TITLE #p {
+        font-size: 13px;
+    }
+}
