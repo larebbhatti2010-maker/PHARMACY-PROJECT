@@ -1513,6 +1513,7 @@ img {
         flex-direction: column;
         align-items: flex-start;
         gap: 15px;
+        height: 0vh;
     }
 
     .TITLE .txt h1 {
@@ -1530,6 +1531,8 @@ img {
 
     .TITLE .contact-action button {
         width: 100%;
+        /* margin-bottom: 20px; */
+       
     }
 
     /* Footer */
@@ -1676,6 +1679,7 @@ footer {
 }
 
 #bttn{
+
   margin-right: 40px;
   background-color:#138a83;
   outline: none;
@@ -1686,11 +1690,13 @@ border-radius: 5px;
 } 
 
 .txt{
+     
     margin-left: 4%;
   margin-right: 20%;
 }
 
 .TITLE{
+
 border-radius: 10px;
   height: 23vh;
   display: flex;
